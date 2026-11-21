@@ -1,0 +1,249 @@
+# AetherIntent — Independence Decision
+
+**Status:** Phase 4 — Independence Decision (Interim Record)
+**Version:** 1.0.0
+**Date:** 2026-11-21
+**Author:** Samir Baladi
+**ORCID:** [0009-0003-8903-0029](https://orcid.org/0009-0003-8903-0029)
+**License:** CC-BY-4.0
+**Position in the Aether family:** Thirteenth project (candidate)
+
+---
+
+## 0. Status of this record
+
+This document is the **Phase 4 decision record**. It records the current
+classification of AetherIntent and the evidence (and absence of evidence) on
+which the classification rests.
+
+**Decision: (E) Undetermined (interim).**
+
+The decision is **interim**, not final. It is not final because:
+
+- no failure condition has been tested;
+- no independent review has been completed (Phase 2);
+- the structural dependency on AetherPolicy and AetherAudit (T3) is
+  unresolved.
+
+The decision does **not**:
+- claim that AetherIntent is an independent architectural dimension;
+- claim that it is not;
+- authorize specification (Phase 5) or implementation (Phase 6).
+
+---
+
+## 1. The decision
+
+> **AetherIntent is classified as (E) Undetermined (interim).**
+>
+> The evidence is insufficient to accept AetherIntent as an independent
+> dimension, and insufficient to reject it. The investigation is at Phase 0.
+
+The classification uses the five-outcome scheme of the falsification plan
+(Section 4):
+
+| Outcome | Meaning |
+|:-:|---|
+| **(A) Accepted** | Independent; proceeds to specification. |
+| **(R) Rejected** | Falsified; not a separate dimension. |
+| **(F) Folded** | A feature of another dimension. |
+| **(D) Deferred** | Cannot be decided because a dependency is unresolved. |
+| **(E) Undetermined** | Evidence insufficient to accept and insufficient to reject. |
+
+The current outcome is **(E)**. It is not **(D)**, because the deferral is
+not total: the hypothesis is stated, the boundaries are mapped, and the
+falsification conditions are designed. What is missing is the execution of
+the tests.
+
+---
+
+## 2. Why the evidence is insufficient to accept
+
+AetherIntent cannot be accepted as an independent dimension for four reasons.
+
+### 2.1 No failure condition has been tested
+
+All four failure conditions (II-F1 to II-F4) are **untested**. The decision
+rule requires all four to be tested with none falsified, with II-F4 supported
+by measured results. None of this has happened.
+
+### 2.2 No implementation or experiment has been run
+
+There is no `src/`, no `tests/`, no `experiments/`. No measurement exists.
+II-F4 in particular cannot be supported without measurement.
+
+### 2.3 Structural dependency on AetherPolicy and AetherAudit
+
+Both are paused at Phase 4 with an (E) Undetermined (interim) decision. Any
+conclusion about AetherIntent that depends on a particular reading of either
+loses force if that reading changes. The boundary map (Phase 1) records
+several relations as **Open** for this reason.
+
+### 2.4 AetherIntent is a candidate, not a confirmed dimension
+
+The hypothesis states this explicitly. A candidate is a hypothesis about an
+architectural gap. The gap may be absent, a restriction of an existing
+dimension, or a feature that belongs elsewhere.
+
+---
+
+## 3. Why the evidence is insufficient to reject
+
+AetherIntent cannot be rejected either, for four reasons.
+
+### 3.1 No failure condition has been falsified
+
+Rejection requires at least one falsified condition. None has been falsified,
+because none has been tested.
+
+### 3.2 The intent integrity question is coherent
+
+The central question — can an autonomous agent execute a financially valid
+transaction that violates the human's delegated intent, and can an independent
+deterministic enforcement layer prevent that execution? — is stated coherently
+and maps to four testable clauses.
+
+### 3.3 Related work exists but does not settle the question
+
+The literature on policy enforcement, audit, and governance exists. It is
+recorded as a reservation on II-F1, not as evidence that the gap is absent.
+
+### 3.4 The boundary map is drawable
+
+Phase 1 produced a boundary map for M1–M5 against the twelve projects. The map
+shows four high-risk overlaps but no demonstrated reduction. The map is
+sufficient to design tests, not to decide independence.
+
+---
+
+## 4. What is missing
+
+The following are named as missing. Each is a condition for moving from (E)
+to another outcome.
+
+| Missing | Required for | Not permitted until |
+|---|---|---|
+| II-F1 responsibility-by-responsibility analysis | Accept / Reject | Phase 3 (design complete; execution pending) |
+| II-F2 composition argument | Accept / Reject | Phase 3 |
+| II-F3 decentralization argument | Accept / Reject | Phase 3 |
+| II-F4 measurement | Accept | Phase 5 and 6 |
+| Independent review (Phase 2) | Final decision | Phase 2 |
+| Resolution of AetherPolicy and AetherAudit | Any final boundary | Their own Phase 4 |
+
+---
+
+## 5. Threats to validity
+
+The seven threats listed in the hypothesis (Section 9) apply to this decision.
+
+| # | Threat | Bearing on this decision |
+|:-:|---|---|
+| **T1** | Author-on-author reasoning | The hypothesis and the decision are written by the same author. |
+| **T2** | No independent review | Phase 2 has not started. |
+| **T3** | Structural dependency on AetherPolicy and AetherAudit | Both paused at Phase 4; any conclusion is conditional. |
+| **T4** | LLM interpretability | The LLM may misinterpret the delegation. |
+| **T5** | Scope of intent validity | May be semantic, not architectural. |
+| **T6** | No measurement | II-F4 is untested. |
+| **T7** | Related work may already cover the gap | The comparison with the field is open. |
+
+The decision is stated **with** these threats, not despite them. They are the
+reason the decision is (E) rather than (A) or (R).
+
+---
+
+## 6. What would change the decision
+
+To move from (E) to another outcome, one of the following is needed:
+
+1. **Phase 2 completion** — an independent review of the hypothesis, the
+   boundary map, and the falsification plan.
+2. **Execution of II-F1, II-F2, II-F3** — analyses, not measurements, that can
+   be carried out at Phase 3.
+3. **A stronger argument** addressing II-F2 (the most fragile condition).
+4. **An experiment** for II-F4 — requires Phase 5 and Phase 6, which are not
+   permitted.
+5. **Resolution of AetherPolicy or AetherAudit** — the structural dependency
+   (T3) must be resolved for II-F2 to be settled.
+
+Without one of these, the project remains at Phase 4 (interim), classified
+(E) Undetermined.
+
+---
+
+## 7. What "Undetermined" means
+
+"Undetermined" is **not** a failure. It states that the evidence is
+insufficient to decide, and names what is missing. It is the correct
+classification at Phase 0, where the hypothesis is stated but not tested.
+
+A premature (A) would be a claim without evidence. A premature (R) would be a
+rejection without a falsified condition. Both would be worse than (E).
+
+---
+
+## 8. Relation to the companion records
+
+| Record | Relation to this decision |
+|---|---|
+| `ARCHITECTURAL_HYPOTHESIS.md` | States the hypothesis this decision classifies. |
+| `research/RESPONSIBILITY_BOUNDARIES.md` | Maps the boundaries; records Open relations. |
+| `FALSIFICATION/FALSIFICATION_PLAN.md` | States how the conditions would be tested. |
+| `REVIEW/` | Will record the independent review (Phase 2). |
+| `REPORTS/architectural_investigation/investigation_report.md` | Summarizes the investigation. |
+
+---
+
+## 9. Phase 2 — Independent Review (Completed)
+
+The independent review of AetherIntent has been **completed** on 2026-11-21.
+
+- **Reviewer:** Jonathan Rabe (AI | ML Engineer, Angeles University Foundation).
+- **Independence:** Confirmed — no authorship, no prior contribution to AetherIntent artifacts, no financial/institutional stake.
+- **Protocol:** `REVIEW/INDEPENDENT_REVIEW_PROTOCOL.md`.
+- **Full signed review:** `REVIEW/INDEPENDENT_REVIEW.md`.
+
+The reviewer accepted the interim classification **(E) Undetermined (interim)** and answered all protocol questions (H1–H3, B1–B3, F1–F3, D1–D3). Two refinements were requested for future revisions:
+
+1. **Clarify labels T1/T2 in assumptions A1–A6** of `ARCHITECTURAL_HYPOTHESIS.md` — they currently appear to be theorem labels, not Threats to Validity T1–T7.
+2. **Sharpen the definitions of "intent validity" and "intent contract"** before executing II-F1 and II-F2, so they cannot be stretched post hoc to match any policy rule.
+
+These refinements do **not** change the classification. The decision remains **(E) Undetermined (interim)** because II-F1–II-F4 remain untested and AetherPolicy / AetherAudit remain paused at Phase 4.
+
+---
+
+## 10. Next step
+
+Phase 3 — Falsification Execution. Each of II-F1, II-F2, II-F3, and II-F4 will be executed according to `FALSIFICATION/FALSIFICATION_PLAN.md`, and the results will be recorded in `FALSIFICATION/II-Fx_RESULT.md`. The classification remains **(E) Undetermined (interim)** until at least II-F1–II-F3 are executed and II-F4 is supported by measured results.
+
+---
+
+## 11. Phase 3 — Falsification Execution (Status, 2026-11-21)
+
+**Date of update:** 2026-11-21
+
+Phase 3 has been executed for three of the four failure conditions. The fourth (II-F4) is recorded as a status, not a verdict.
+
+| Condition | Status | Reviewer | Date |
+|---|---|---|---|
+| **II-F1** | SURVIVES (interim, SIGNED) | Jonathan Rabe | 2026-11-21 |
+| **II-F2** | SURVIVES (interim, SIGNED) | Jonathan Rabe | 2026-11-21 |
+| **II-F3** | SURVIVES (interim, SIGNED) | Jonathan Rabe | 2026-11-21 |
+| **II-F4** | NOT EXECUTABLE UNDER CURRENT PHASE CONSTRAINTS | Jonathan Rabe (status record review) | 2026-11-21 |
+
+**Interpretation.**
+
+- II-F1, II-F2, and II-F3 survive (interim). They have been signed by the independent reviewer, subject to the residual risks recorded in their respective files (R1–R6 for II-F1; RR1–RR7 for II-F2; RR1–RR8 for II-F3).
+- II-F4 has not been executed. It is not a pass, and it is not a failure. It is a status: the empirical test cannot be run under the current phase constraints (no implementation, no experiments).
+- The Phase 4 decision **(E) Undetermined (interim)** is unchanged. The reasons are unchanged: II-F1–II-F3 survive on argument only (residual risks remain), II-F4 is not executable, and AetherPolicy / AetherAudit remain paused at Phase 4.
+
+**What has changed.** The evidence base has grown: three failure conditions have been examined by argument and signed by the independent reviewer. This does not by itself change the classification, but it narrows the space of possible outcomes for Phase 4.
+
+**What has not changed.** The Phase 4 classification remains (E) Undetermined (interim). The structural dependencies (AetherPolicy, AetherAudit) remain unresolved. No implementation has been authorized.
+
+---
+
+**AetherIntent v1.0.0 — Independence Decision**
+© 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
+DOI: 10.5281/zenodo.24417251
+
+*Phase 4 deliverable (interim, post-Phase-2). Decision: (E) Undetermined (interim).*

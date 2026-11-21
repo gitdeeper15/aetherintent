@@ -1,0 +1,22 @@
+{
+  "project": "AetherIntent",
+  "version": "1.0.0",
+  "status": "Phase 3 (Falsification Execution — 3 SURVIVES, 1 NOT EXECUTABLE)",
+  "decision": "E_undetermined_interim",
+  "failure_conditions": {
+    "II-F1": "SURVIVES (interim, SIGNED — Jonathan Rabe, 2026-11-21)",
+    "II-F2": "SURVIVES (interim, SIGNED — Jonathan Rabe, 2026-11-21)",
+    "II-F3": "SURVIVES (interim, SIGNED — Jonathan Rabe, 2026-11-21)",
+    "II-F4": "NOT EXECUTABLE UNDER CURRENT PHASE CONSTRAINTS"
+  },
+  "propositions": {
+    "P1": "proof sketch (not machine-checked)",
+    "P2": "proof sketch (not machine-checked)"
+  },
+  "implementation": "none",
+  "experiments": "none",
+  "review": "completed (Jonathan Rabe, 2026-11-21)",
+  "structural_dependency": ["AetherPolicy (Phase 4 paused)", "AetherAudit (Phase 4 paused)"],
+  "doi": "10.5281/zenodo.24417251",
+  "license": "CC-BY-4.0"
+}

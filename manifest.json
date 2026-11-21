@@ -1,0 +1,13 @@
+{
+  "name": "AetherIntent",
+  "version": "1.0.0",
+  "description": "Intent Integrity in Autonomous Economic Agent Systems — falsification-first architectural investigation",
+  "author": "Samir Baladi",
+  "orcid": "0009-0003-8903-0029",
+  "doi": "10.5281/zenodo.24417251",
+  "license": "CC-BY-4.0",
+  "phase": 0,
+  "decision": "E_undetermined_interim",
+  "url": "https://aetherintent.netlify.app",
+  "github": "https://github.com/gitdeeper15/aetherintent"
+}

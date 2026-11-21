@@ -1,0 +1,37 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+type: software
+title: "AetherIntent: Intent Integrity in Autonomous Economic Agent Systems"
+version: 1.0.0
+doi: 10.5281/zenodo.24417251
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.24417251
+    description: "Zenodo Archive (Primary)"
+  - type: url
+    value: "https://github.com/gitdeeper15/aetherintent"
+    description: "GitHub Repository"
+authors:
+  - family-names: "Baladi"
+    given-names: "Samir"
+    orcid: "https://orcid.org/0009-0003-8903-0029"
+    affiliation: "Ronin Institute / Rite of Renaissance"
+repository-code: "https://github.com/gitdeeper15/aetherintent"
+url: "https://doi.org/10.5281/zenodo.24417251"
+license: CC-BY-4.0
+keywords:
+  - multi-agent systems
+  - intent integrity
+  - autonomous economic agents
+  - deterministic enforcement
+  - trust boundary
+  - falsification-first
+  - architectural investigation
+  - Aether family
+abstract: >-
+  AetherIntent is the thirteenth candidate of the Aether family. It investigates
+  whether autonomous agents can execute financially valid transactions that
+  violate the human's delegated intent, and whether an independent deterministic
+  enforcement layer can prevent that execution. Current status: Phase 0
+  (Architectural Hypothesis). Decision: (E) Undetermined (interim).
+date-released: 2026-11-21

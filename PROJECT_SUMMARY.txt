@@ -1,0 +1,106 @@
+═══════════════════════════════════════════════════════════════════════════
+  AetherIntent v1.0.0 — Project Summary
+═══════════════════════════════════════════════════════════════════════════
+
+  Intent Integrity in Autonomous Economic Agent Systems
+
+  Version        : 1.0.0 (Architectural Hypothesis)
+  Date           : 2026-11-21
+  Record ID      : AETHERINTENT-01
+  Position       : Thirteenth project of the Aether family (candidate)
+  Author         : Samir Baladi (gitdeeper@gmail.com)
+  ORCID          : 0009-0003-8903-0029
+  License        : CC-BY-4.0 (this document) + MIT (code, future)
+  Structural Dep.: AetherPolicy (Phase 4 paused), AetherAudit (Phase 4 paused)
+
+───────────────────────────────────────────────────────────────────────────
+  STATUS
+───────────────────────────────────────────────────────────────────────────
+
+  Architectural Hypothesis. Phase 0 (In Progress).
+  Decision: (E) Undetermined (interim).
+
+  No implementation, specification, test, or experiment is reported.
+
+───────────────────────────────────────────────────────────────────────────
+  CENTRAL QUESTION
+───────────────────────────────────────────────────────────────────────────
+
+  Can an autonomous agent execute a financially valid transaction that
+  violates the human's delegated intent, and can an independent deterministic
+  enforcement layer prevent that execution?
+
+───────────────────────────────────────────────────────────────────────────
+  FIVE CANDIDATE RESPONSIBILITIES (INITIAL SCOPE)
+───────────────────────────────────────────────────────────────────────────
+
+  M1 — Intent Interpretation     Translating natural language into structured intent.
+  M2 — Intent Enforcement        Deterministic verification.
+  M3 — Behavioural Monitoring    Detecting deviations.
+  M4 — Decision Semantics        ALLOW / ASK / HOLD / DENY.
+  M5 — Integrity Ledger          Recording every proposal, decision, execution.
+
+───────────────────────────────────────────────────────────────────────────
+  ARCHITECTURAL HYPOTHESIS
+───────────────────────────────────────────────────────────────────────────
+
+  A potentially independent architectural gap may exist between policy
+  enforcement, audit, and governance: the verification of intent validity —
+  the consistency of a transaction with the human's delegated intent — as
+  distinct from financial validity.
+
+  This hypothesis is falsifiable.
+
+───────────────────────────────────────────────────────────────────────────
+  FAILURE CONDITIONS (II-F1 TO II-F4)
+───────────────────────────────────────────────────────────────────────────
+
+  II-F1  Non-redundancy                Untested
+  II-F2  Distinction from Policy + Audit + Govern  Untested
+  II-F3  Decentralizability            Untested
+  II-F4  Observable benefit            Untested
+
+───────────────────────────────────────────────────────────────────────────
+  INDEPENDENCE DECISION (PHASE 0)
+───────────────────────────────────────────────────────────────────────────
+
+  Classification : (E) Undetermined (interim)
+
+  The investigation has just begun. No evidence has been collected, no
+  experiment has been run, and no failure condition has been tested.
+
+───────────────────────────────────────────────────────────────────────────
+  WHAT THIS PROJECT DOES NOT CLAIM
+───────────────────────────────────────────────────────────────────────────
+
+  - That AetherIntent is an independent architectural dimension.
+  - That the five responsibilities are complete.
+  - That the boundaries with AetherPolicy, AetherAudit, AetherGovern, and
+    the other dimensions are sufficient.
+  - That the gap is genuine.
+  - That implementation should begin.
+
+───────────────────────────────────────────────────────────────────────────
+  PHASE STATUS
+───────────────────────────────────────────────────────────────────────────
+
+  0  Architectural Hypothesis       Complete (ARCHITECTURAL_HYPOTHESIS.md)
+  1  Responsibility Mapping         Complete (research/RESPONSIBILITY_BOUNDARIES.md)
+  2  Hypothesis Review              Protocol complete; review not started
+  3  Falsification Design           Complete (FALSIFICATION/FALSIFICATION_PLAN.md)
+  4  Independence Decision          Interim: (E) Undetermined
+  5  Specification                  Not permitted
+  6  Implementation                 Not permitted
+
+───────────────────────────────────────────────────────────────────────────
+  LINKS
+───────────────────────────────────────────────────────────────────────────
+
+  GitHub    : https://github.com/gitdeeper15/aetherintent
+  Website   : https://aetherintent.netlify.app
+  ORCID     : https://orcid.org/0009-0003-8903-0029
+  Zenodo    : https://doi.org/10.5281/zenodo.24417251
+
+───────────────────────────────────────────────────────────────────────────
+  "AetherIntent is a candidate, not a result."
+═══════════════════════════════════════════════════════════════════════════
