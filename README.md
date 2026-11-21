@@ -64,7 +64,7 @@ This repository contains no `src/`, no `tests/`, and no `experiments/`. It **doe
 | | |
 |---|---|
 | **Current release (v1.0.0)** | [Zenodo](https://doi.org/10.5281/zenodo.24417251) · [Figshare](https://doi.org/10.6084/m9.figshare.35082577) |
-| **Length** | ~XX pages, ~XX,XXX words, XX references (to be filled from the paper PDF) |
+| **Length** | 31 pages, ~13,000 words (about 9,500 in Sections 1–12), 38 references |
 | **PDF in this repo** | [`paper/AetherIntent_Research_Paper_v1.0.0.pdf`](paper/AetherIntent_Research_Paper_v1.0.0.pdf) |
 | **Website** | [aetherintent.netlify.app](https://aetherintent.netlify.app) |
 
@@ -330,134 +330,138 @@ AetherIntent/
         └── README.md
 ```
 
-No src/, no tests/, no experiments/ — by design.
+No `src/`, no `tests/`, no `experiments/`, by design.
 
 ---
 
-Phase Status
+## Phase Status
 
-Phase Description Status
-0 — Architectural Hypothesis The hypothesis is stated ✅ Complete (ARCHITECTURAL_HYPOTHESIS.md)
-1 — Responsibility Mapping Boundaries with existing dimensions ✅ Complete (research/RESPONSIBILITY_BOUNDARIES.md)
-2 — Hypothesis Review Independent review of the hypothesis ✅ Complete (REVIEW/INDEPENDENT_REVIEW.md)
-3 — Falsification Execution Execution of II-F1–II-F4 ✅ Complete (3 SURVIVES, 1 NOT EXECUTABLE)
-4 — Independence Decision (E) Undetermined (interim) ⚠️ Interim (DECISIONS/INDEPENDENCE_DECISION.md)
-5 — Architectural Specification Requires a positive Phase 4 ❌ Not permitted
-6 — Reference Implementation Requires Phase 5 ❌ Not permitted
-7 — Code-level Evaluation Requires Phase 6 ❌ Not permitted
-
----
-
-What This Repository Does Not Claim
-
-· ✖ That AetherIntent is an independent architectural dimension.
-· ✖ That the seven flow stages are complete, independent, or necessary.
-· ✖ That the five candidate responsibilities (M1–M5) are complete.
-· ✖ That the boundaries with AetherPolicy, AetherAudit, AetherGovern, and the other dimensions are sufficient.
-· ✖ That the gap is genuine.
-· ✖ That implementation should begin.
-· ✖ Any observed benefit (II-F4 is not executable under current constraints).
-· ✖ Any causal effect.
-· ✖ Any specification of an interface, schema, protocol, or prompt.
+| Phase | Description | Status |
+|:-:|---|---|
+| **0** — Architectural Hypothesis | The hypothesis is stated | ✅ Complete (`ARCHITECTURAL_HYPOTHESIS.md`) |
+| **1** — Responsibility Mapping | Boundaries with existing dimensions | ✅ Complete (`research/RESPONSIBILITY_BOUNDARIES.md`) |
+| **2** — Hypothesis Review | Independent review of the hypothesis | ✅ Complete (`REVIEW/INDEPENDENT_REVIEW.md`) |
+| **3** — Falsification Execution | Execution of II-F1 to II-F4 | ✅ Complete (3 SURVIVES, 1 NOT EXECUTABLE) |
+| **4** — Independence Decision | (E) Undetermined (interim) | ⚠️ Interim (`DECISIONS/INDEPENDENCE_DECISION.md`) |
+| **5** — Architectural Specification | Requires a positive Phase 4 | ❌ Not permitted |
+| **6** — Reference Implementation | Requires Phase 5 | ❌ Not permitted |
+| **7** — Code-level Evaluation | Requires Phase 6 | ❌ Not permitted |
 
 ---
 
-Related Work
+## What This Repository Does Not Claim
+
+- ✖ That AetherIntent is an independent architectural dimension.
+- ✖ That the seven flow stages are complete, independent, or necessary.
+- ✖ That the five candidate responsibilities (M1–M5) are complete.
+- ✖ That the boundaries with AetherPolicy, AetherAudit, AetherGovern, and the other dimensions are sufficient.
+- ✖ That the gap is genuine.
+- ✖ That implementation should begin.
+- ✖ Any observed benefit (II-F4 is not executable under current constraints).
+- ✖ Any causal effect.
+- ✖ Any specification of an interface, schema, protocol, or prompt.
+
+---
+
+## Related Work
 
 The paper cites the nearest neighbours as reservations on II-F1, not as support for the candidate:
 
-· Reference monitor (Anderson, 1972) and enforceable policies (Schneider, 2000): motivation for a deterministic enforcement layer, and a limit on what can be enforced.
-· Audit logging (Schneier & Kelsey, 1999; Crosby & Wallach, 2009): background for the integrity ledger (M5).
-· Confused deputy (Hardy, 1988) and capability systems (Miller, 2006): background for the authority/intent boundary.
-· Indirect prompt injection (Greshake et al., 2023) and faithfulness of explanations (Jacovi & Goldberg, 2020; Turpin et al., 2023): motivation for the trust boundary (P1).
-· Intention in philosophy and logic (Bratman, 1987; Cohen & Levesque, 1990; Rao & Georgeff, 1995): vocabulary only, not adopted framework.
+- **Reference monitor** (Anderson, 1972) and **enforceable policies** (Schneider, 2000): motivation for a deterministic enforcement layer, and a limit on what can be enforced.
+- **Audit logging** (Schneier & Kelsey, 1999; Crosby & Wallach, 2009): background for the integrity ledger (M5).
+- **Confused deputy** (Hardy, 1988) and **capability systems** (Miller, 2006): background for the authority/intent boundary.
+- **Indirect prompt injection** (Greshake et al., 2023) and **faithfulness of explanations** (Jacovi & Goldberg, 2020; Turpin et al., 2023): motivation for the trust boundary (P1).
+- **Intention in philosophy and logic** (Bratman, 1987; Cohen & Levesque, 1990; Rao & Georgeff, 1995): vocabulary only, not an adopted framework.
 
 The comparison with the field is treated as open and is a reservation on II-F1.
 
 ---
 
-Related Aether Projects
+## Related Aether Projects
 
-# Project Status DOI
-1 AetherGit Foundational 10.5281/zenodo.23976986
-2 AetherFlow Foundational 10.5281/zenodo.23979129
-3 AetherProof Foundational 10.5281/zenodo.24013124
-4 AetherMesh Foundational 10.5281/zenodo.24038038
-5 AetherGovern Foundational 10.5281/zenodo.24054524
-6 AetherRuntime Foundational 10.5281/zenodo.24078477
-7 AetherOrchestrate Foundational 10.5281/zenodo.24095399
-8 AetherIdentity Candidate 10.5281/zenodo.24102739
-9 AetherPolicy Candidate (Phase 4: paused) 10.5281/zenodo.24160047
-10 AetherAudit Candidate (Phase 4: paused) 10.5281/zenodo.24274628
-11 AetherHuman Candidate (Phase 4: paused) 10.5281/zenodo.24278322
-12 AetherMemory Candidate (interim) 10.5281/zenodo.24372288
-13 AetherIntent Candidate (this repository; Phase 3) Zenodo · Figshare
+| # | Project | Status | DOI |
+|:-:|---|---|---|
+| 1 | AetherGit | Foundational | [10.5281/zenodo.23966896](https://doi.org/10.5281/zenodo.23966896) |
+| 2 | AetherFlow | Foundational | [10.5281/zenodo.23979129](https://doi.org/10.5281/zenodo.23979129) |
+| 3 | AetherProof | Foundational | [10.5281/zenodo.24013124](https://doi.org/10.5281/zenodo.24013124) |
+| 4 | AetherMesh | Foundational | [10.5281/zenodo.24038038](https://doi.org/10.5281/zenodo.24038038) |
+| 5 | AetherGovern | Foundational | [10.5281/zenodo.24054524](https://doi.org/10.5281/zenodo.24054524) |
+| 6 | AetherRuntime | Foundational | [10.5281/zenodo.24078477](https://doi.org/10.5281/zenodo.24078477) |
+| 7 | AetherOrchestrate | Foundational | [10.5281/zenodo.24095399](https://doi.org/10.5281/zenodo.24095399) |
+| 8 | AetherIdentity | Candidate | [10.5281/zenodo.24102739](https://doi.org/10.5281/zenodo.24102739) |
+| 9 | AetherPolicy | Candidate (Phase 4: paused) | [10.5281/zenodo.24160047](https://doi.org/10.5281/zenodo.24160047) |
+| 10 | AetherAudit | Candidate (Phase 4: paused) | [10.5281/zenodo.24274628](https://doi.org/10.5281/zenodo.24274628) |
+| 11 | AetherHuman | Candidate (Phase 4: paused) | [10.5281/zenodo.24278322](https://doi.org/10.5281/zenodo.24278322) |
+| 12 | AetherMemory | Candidate (interim) | [10.5281/zenodo.24372288](https://doi.org/10.5281/zenodo.24372288) |
+| 13 | **AetherIntent** | Candidate (this repository; Phase 3) | [Zenodo](https://doi.org/10.5281/zenodo.24417251) · [Figshare](https://doi.org/10.6084/m9.figshare.35082577) |
 
 ---
 
-Figures
+## Figures
 
-Figures 1 to 5 are described in the paper and stored in docs/figures/.
+Figures 1 to 5 are described in the paper and stored in [`docs/figures/`](docs/figures/).
 
-Figure 1 — The Thirteen Dimensions of the Aether Family
+### Figure 1 — The Thirteen Dimensions of the Aether Family
 
 ![Figure 1: The Thirteen Dimensions of the Aether Family](docs/figures/Fig1_Thirteen_Dimensions.png)
 
-Seven foundational dimensions and six candidates. AetherIntent is the newest candidate.
+*Seven foundational dimensions and six candidates. AetherIntent is the newest candidate.*
 
-Figure 2 — AetherIntent Intent Lifecycle (Seven Stages)
+### Figure 2 — AetherIntent Intent Lifecycle (Seven Stages)
 
 ![Figure 2: AetherIntent Intent Lifecycle (Seven Stages)](docs/figures/Fig2_Intent_Lifecycle.png)
 
-Human delegation, LLM compilation, intent contract, agent proposal, integrity engine, decision, execution/rejection. Each stage is a hypothesis, not a specification.
+*Human delegation, LLM compilation, intent contract, agent proposal, integrity engine, decision, execution/rejection. Each stage is a hypothesis, not a specification.*
 
-Figure 3 — The Four Decisions (ALLOW / ASK / HOLD / DENY)
+### Figure 3 — The Four Decisions (ALLOW / ASK / HOLD / DENY)
 
 ![Figure 3: The Four Decisions (ALLOW / ASK / HOLD / DENY)](docs/figures/Fig3_Four_Decisions.png)
 
-The four-outcome decision vocabulary. ASK and HOLD destinations are treated as open.
+*The four-outcome decision vocabulary. ASK and HOLD destinations are treated as open.*
 
-Figure 4 — The Trust Boundary
+### Figure 4 — The Trust Boundary
 
 ![Figure 4: The Trust Boundary](docs/figures/Fig4_Trust_Boundary.png)
 
-Interpretation (LLM) and enforcement (deterministic engine) sit on opposite sides of the trust boundary.
+*Interpretation (LLM) and enforcement (deterministic engine) sit on opposite sides of the trust boundary.*
 
-Figure 5 — Coverage Matrix: Responsibilities × Existing Dimensions
+### Figure 5 — Coverage Matrix: Responsibilities × Existing Dimensions
 
 ![Figure 5: Coverage Matrix: Responsibilities × Existing Dimensions](docs/figures/Fig5_Coverage_Matrix.png)
 
-The matrix reflects the author's preliminary reading, not a verified assessment. The full coverage assigned to Policy, Audit, and Govern is the remainder that II-F2 must test — and it weighs against independence.
+*The matrix reflects the author's preliminary reading, not a verified assessment. The full coverage assigned to Policy, Audit, and Govern is the remainder that II-F2 must test, and it weighs against independence.*
 
 ---
 
-Figure Notes
+## Figure Notes
 
-Figure Observation
-Fig 1 The stack is a graphical convention, not a dependency-order assertion.
-Fig 2 The flow is linear. There is no path from Stage 6 (Decision) back to Stage 1 (Delegation), although an ASK outcome implies that the human is consulted. This interaction with AetherHuman is a boundary question.
-Fig 3 ASK and HOLD destinations are not drawn. The paper treats them as open.
-Fig 4 The trust boundary hypothesis places interpretation (LLM) and enforcement (deterministic engine) on opposite sides.
-Fig 5 The matrix reflects the author's preliminary reading, not a verified assessment. The full coverage assigned to Policy, Audit, and Govern is the remainder that II-F2 must test — and it weighs against independence.
-
----
-
-Threats to Validity (T1–T7)
-
-# Threat Description
-T1 Author-on-author reasoning The hypothesis and the decision are written by the same author.
-T2 No independent review Resolved: signed by Jonathan Rabe (2026-11-21). Residual risk of "single reviewer" remains.
-T3 Structural dependency on AetherPolicy and AetherAudit Both are paused at Phase 4; any conclusion is conditional.
-T4 LLM interpretability The LLM may misinterpret the delegation; the integrity engine cannot fix a bad interpretation.
-T5 Scope of intent validity "Intent validity" may be a semantic notion, not an architectural one.
-T6 No measurement II-F4 is not executable under current constraints; no evaluation has been run.
-T7 Related work may already cover the gap The comparison with the field is open.
+| Figure | Observation |
+|:-:|---|
+| **Fig 1** | The stack is a graphical convention, not a dependency-order assertion. |
+| **Fig 2** | The flow is linear. There is no path from Stage 6 (Decision) back to Stage 1 (Delegation), although an ASK outcome implies that the human is consulted. This interaction with AetherHuman is a boundary question. |
+| **Fig 3** | ASK and HOLD destinations are not drawn. The paper treats them as open. |
+| **Fig 4** | The trust boundary hypothesis places interpretation (LLM) and enforcement (deterministic engine) on opposite sides. |
+| **Fig 5** | The matrix reflects the author's preliminary reading, not a verified assessment. The full coverage assigned to Policy, Audit, and Govern is the remainder that II-F2 must test, and it weighs against independence. |
 
 ---
 
-Citation
+## Threats to Validity (T1–T7)
 
-Machine-readable metadata is in CITATION.cff (GitHub shows a "Cite this repository" button).
+| # | Threat | Description |
+|:-:|---|---|
+| **T1** | Author-on-author reasoning | The hypothesis and the decision are written by the same author. |
+| **T2** | No independent review | Resolved: signed by Jonathan Rabe (2026-11-21). Residual risk of "single reviewer" remains. |
+| **T3** | Structural dependency on AetherPolicy and AetherAudit | Both are paused at Phase 4; any conclusion is conditional. |
+| **T4** | LLM interpretability | The LLM may misinterpret the delegation; the integrity engine cannot fix a bad interpretation. |
+| **T5** | Scope of intent validity | "Intent validity" may be a semantic notion, not an architectural one. |
+| **T6** | No measurement | II-F4 is not executable under current constraints; no evaluation has been run. |
+| **T7** | Related work may already cover the gap | The comparison with the field is open. |
+
+---
+
+## Citation
+
+Machine-readable metadata is in [`CITATION.cff`](CITATION.cff) (GitHub shows a "Cite this repository" button).
 
 ```bibtex
 @misc{baladi2026aetherintent,
@@ -474,33 +478,34 @@ Machine-readable metadata is in CITATION.cff (GitHub shows a "Cite this reposito
 
 ---
 
-Author
+## Author
 
-Samir Baladi
+**Samir Baladi**
 Interdisciplinary AI Researcher, Ronin Institute / Rite of Renaissance
 
- 
-Email gitdeeper@gmail.com
-ORCID 0009-0003-8903-0029
-GitHub gitdeeper15/aetherintent
-GitLab gitlab.com/gitdeeper15/aetherintent
-Codeberg codeberg.org/gitdeeper15/aetherintent
-Bitbucket bitbucket.org/gitdeeper15/aetherintent
-Website aetherintent.netlify.app
-Zenodo (v1.0.0, current) 10.5281/zenodo.24417251
-Figshare (mirror) 10.6084/m9.figshare.35082577
+| | |
+|---|---|
+| **Email** | [gitdeeper@gmail.com](mailto:gitdeeper@gmail.com) |
+| **ORCID** | [0009-0003-8903-0029](https://orcid.org/0009-0003-8903-0029) |
+| **GitHub** | [gitdeeper15/aetherintent](https://github.com/gitdeeper15/aetherintent) |
+| **GitLab** | [gitlab.com/gitdeeper15/aetherintent](https://gitlab.com/gitdeeper15/aetherintent) |
+| **Codeberg** | [codeberg.org/gitdeeper15/aetherintent](https://codeberg.org/gitdeeper15/aetherintent) |
+| **Bitbucket** | [bitbucket.org/gitdeeper15/aetherintent](https://bitbucket.org/gitdeeper15/aetherintent) |
+| **Website** | [aetherintent.netlify.app](https://aetherintent.netlify.app) |
+| **Zenodo (v1.0.0, current)** | [10.5281/zenodo.24417251](https://doi.org/10.5281/zenodo.24417251) |
+| **Figshare (mirror)** | [10.6084/m9.figshare.35082577](https://doi.org/10.6084/m9.figshare.35082577) |
 
 ---
 
-License
+## License
 
 CC-BY-4.0 (this document). MIT (code, future; none in this release).
 
 ---
 
-AetherIntent v1.0.0 — Intent Integrity
+**AetherIntent v1.0.0 — Intent Integrity**
 
 © 2026 Samir Baladi — Ronin Institute / Rite of Renaissance
 Zenodo DOI (v1.0.0): 10.5281/zenodo.24417251 · Figshare DOI: 10.6084/m9.figshare.35082577
 
-AetherIntent is a candidate, not a result.
+***AetherIntent is a candidate, not a result.***
