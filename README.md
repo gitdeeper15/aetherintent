@@ -401,31 +401,31 @@ Figures 1 to 5 are described in the paper and stored in docs/figures/.
 
 Figure 1 — The Thirteen Dimensions of the Aether Family
 
-docs/figures/Fig1_Thirteen_Dimensions.png
+![Figure 1: The Thirteen Dimensions of the Aether Family](docs/figures/Fig1_Thirteen_Dimensions.png)
 
 Seven foundational dimensions and six candidates. AetherIntent is the newest candidate.
 
 Figure 2 — AetherIntent Intent Lifecycle (Seven Stages)
 
-docs/figures/Fig2_Intent_Lifecycle.png
+![Figure 2: AetherIntent Intent Lifecycle (Seven Stages)](docs/figures/Fig2_Intent_Lifecycle.png)
 
 Human delegation, LLM compilation, intent contract, agent proposal, integrity engine, decision, execution/rejection. Each stage is a hypothesis, not a specification.
 
 Figure 3 — The Four Decisions (ALLOW / ASK / HOLD / DENY)
 
-docs/figures/Fig3_Four_Decisions.png
+![Figure 3: The Four Decisions (ALLOW / ASK / HOLD / DENY)](docs/figures/Fig3_Four_Decisions.png)
 
 The four-outcome decision vocabulary. ASK and HOLD destinations are treated as open.
 
 Figure 4 — The Trust Boundary
 
-docs/figures/Fig4_Trust_Boundary.png
+![Figure 4: The Trust Boundary](docs/figures/Fig4_Trust_Boundary.png)
 
 Interpretation (LLM) and enforcement (deterministic engine) sit on opposite sides of the trust boundary.
 
 Figure 5 — Coverage Matrix: Responsibilities × Existing Dimensions
 
-docs/figures/Fig5_Coverage_Matrix.png
+![Figure 5: Coverage Matrix: Responsibilities × Existing Dimensions](docs/figures/Fig5_Coverage_Matrix.png)
 
 The matrix reflects the author's preliminary reading, not a verified assessment. The full coverage assigned to Policy, Audit, and Govern is the remainder that II-F2 must test — and it weighs against independence.
 
